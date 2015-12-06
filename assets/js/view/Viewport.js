@@ -6,9 +6,12 @@ Ext.define('Acct.view.Viewport', {
         'Ext.layout.container.Accordion',
         'Ext.tab.Panel',
 
+        'Acct.view.MainController',
         'Acct.view.BannerHeader',
         'Acct.view.UserPanel'
     ],
+
+    controller: 'main',
 
     layout: 'border',
 
@@ -41,8 +44,7 @@ Ext.define('Acct.view.Viewport', {
             }]
         }, {
             region: 'center',
-            xtype: 'tabpanel',
-            html: 'this is a tab'
+            xtype: 'tabpanel'
         }];
 
         me.callParent(arguments);
