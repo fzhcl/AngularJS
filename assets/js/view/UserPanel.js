@@ -3,10 +3,14 @@ Ext.define('Acct.view.UserPanel',{
 	alias: 'widget.userpanel',
 
 	requires: [
+		'Acct.view.UserController',
+
 		'Acct.view.UserSearchForm',
 		'Acct.view.NavigationPanel',
 		'Acct.store.UserEditTreeStore'
 	],
+
+	controller: 'usersearch',
 
 	title: 'Players Quick Search',
 
