@@ -4,7 +4,9 @@ Ext.define('Acct.view.Viewport', {
     requires: [
         'Ext.layout.container.Border',
         'Ext.layout.container.Accordion',
-        'Ext.tab.Panel'
+        'Ext.tab.Panel',
+
+        'Acct.view.BannerHeader'
     ],
 
     layout: 'border',
@@ -14,8 +16,7 @@ Ext.define('Acct.view.Viewport', {
 
         me.items = [{
             region: 'north',
-            height: 30,
-            html: 'This is a header'
+            xtype: 'bannerheader'
         }, {
             region: 'west',
             title: 'Home',
