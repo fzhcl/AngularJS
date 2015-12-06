@@ -6,7 +6,8 @@ Ext.define('Acct.view.Viewport', {
         'Ext.layout.container.Accordion',
         'Ext.tab.Panel',
 
-        'Acct.view.BannerHeader'
+        'Acct.view.BannerHeader',
+        'Acct.view.UserPanel'
     ],
 
     layout: 'border',
@@ -36,9 +37,7 @@ Ext.define('Acct.view.Viewport', {
                     root: {children:[{name:'Reports',mtype:'Territory',children:[{name:'Daily report',leaf:true},{name:'Weekly report',leaf:true},{name:'Yearly report',leaf:true}]},{name:'Activities',mtype:'Territory',children:[{name:'USA',mtype:'Country',children:[{name:'Redwood City',mtype:'City',leaf:true}]}]}]}
                 }
             }, {
-                xtype: 'panel',
-                title: 'User Management',
-                html: 'user'
+                xtype: 'userpanel'
             }]
         }, {
             region: 'center',
